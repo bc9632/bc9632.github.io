@@ -1,0 +1,95 @@
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Bake for Charity</title>
+            <link rel="stylesheet" type="text/css" href="bootstrap.css">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        </head>
+        <body>
+
+        <!---Responsive navbar--->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+          <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <i class="fas fa-cookie-bite"></i>
+               Bake for Charity</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="nav navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="buy.html">Buy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="orders.html">Orders</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="donate.html">Donate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="volunteers.html">Volunteers</a>
+          </li>
+          </ul>
+                </div>
+            </div>
+            </nav>
+            
+    <!---Make a donation--->
+    <div class="container text-left border-bottom border-dark">
+        <h3><i>Make a donation</i></h3>
+    </div>
+            
+    <div class="container text-left p-3">
+        <p><i>If you'd like to make an extra donation to One Nation, you can do so below:</i></p>
+        <small><i>Please note: this is not an option to pay for your order. All orders are cash upon collection.</i></small>
+    </div>
+            
+    <!---PayPal donation--->
+    <div class="container text-center p-3">
+        <br>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_donations" />
+            <input type="hidden" name="business" value="A579USFKNEMCW" />
+            <input type="hidden" name="currency_code" value="GBP" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
+        </form>   
+    </div>
+            
+    <!---Donation info--->
+    <div class="container text-center">
+    <div class="row">
+            <div class="col-md-3 col-sm-2 col-1"></div>
+            <div class="col-md-6 col-sm-8 col-10  p-3 mt-2 mb-4 border rounded bg-dark text-white">
+                <div class="border-bottom"><h5 class="text-white"><i>How your donations are used...</i></h5></div>
+                <br>
+                <p>One Nation has a 100% donations policy - that means anything you give to them goes directly to the causes they're intended for. Any administration costs are covered by donations made specifically for that purpose, or recycled clothing.</p>
+                <p>Their projects are being carried out both in the UK and in countries across the world. Anything donated through our website will be forwarded onto them for their <i>'Most Needy'</i> causes. This helps to provide funding for emergency situations as and when they arise.</p>
+                <p>If you would like to make a more specific donation than this, you can head over to <a href="https://onenationuk.org/donate-now" class="text-white" target="_blank"><u>their website</u></a> and choose exactly which project you would like it to go towards.</p>
+            </div>
+            <div class="col-md-6 col-sm-8 col-10"></div>
+            </div>
+            </div>
+            
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+</body>
+
+<footer>
+    <div class="container small">
+        <div class="row">
+            <div class="col-6 text-left"><p><b>Registered Charity Number:</b> 1156200<br>
+            <b>Head Office:</b> 2A Oxford Street, Mount Pleasant, Batley, WF17 7PZ</p></div>
+            <div class="col-6 text-right"><a href="privacy.html">Privacy</a> <b>|</b> <a href="contact.html">Contact us</a> <b>|</b> <a href="https://onenationuk.org/">One Nation</a> <b>|</b> <a class="ins-ic mr-3" role="button" href="http://instagram.com/cheesecakeforcharity"><i class="fab fa-instagram"></i></a></div>
+        </div>
+    </div>
+</footer>
+
+</html>

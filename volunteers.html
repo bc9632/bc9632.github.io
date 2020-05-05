@@ -1,0 +1,193 @@
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Bake for Charity</title>
+            <link rel="stylesheet" type="text/css" href="bootstrap.css">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        </head>
+        <body>
+
+        <!---Responsive navbar--->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+          <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <i class="fas fa-cookie-bite"></i>
+               Bake for Charity</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="nav navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="buy.html">Buy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="orders.html">Orders</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="donate.html">Donate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="volunteers.html">Volunteers</a>
+          </li>
+          </ul>
+            </div>
+        </div>
+        </nav>
+            
+        <!---Title--->
+        <div class="container text-left border-bottom border-dark">
+            <h3><i>Volunteers</i></h3>
+        </div>
+            
+        <!---Manage an order--->
+        <div class="container text-left p-3 mt-3 border rounded">
+            <h4><i>Manage an order</i></h4>
+        <div class="container text-center">
+        <div class="row">
+            <div class="col-md-3 col-sm-2 col-1"></div>
+            <div class="col-md-6 col-sm-8 col-10">
+                <form>
+                  <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                        <label for="inputOrderNum">Order number:</label><input type="text" class="form-control" id="inputOrderNum" placeholder="Order number" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                        <label for="inputLastName">Last name:</label><input type="text" class="form-control" id="inputLastName" placeholder="Last name" required>
+                        </div>
+                    </div>
+                    <div class="col">  
+                        <div class="form-group">
+                        <label for="inputCollectionDate">Collection date:</label><input type="date" class="form-control" id="inputCollectionDate" required>
+                        </div>
+                      </div>
+                    </div>
+                  <button type="submit" class="btn btn-dark">View order</button>
+                </form>
+                <br>
+            </div>
+            <div class="col-md-3 col-sm-2 col-1"></div>
+        </div>
+        </div>
+                <!---Managing order info--->
+                <div class="container text-left" id="manageOrderInfo">
+                <!---Returned managing order info will show here.--->
+                </div>
+        </div>
+            
+
+            
+        <!---Ingredients--->
+        <div class="container text-left p-3 mt-3 mb-3 border rounded">
+            <h4><i>View ingredients</i></h4>
+        <div class="container text-center">
+        <div class="row">
+            <div class="col-md-3 col-sm-2 col-1"></div>
+            <div class="col-md-6 col-sm-8 col-10">
+                <form>
+                  <div class="row">
+                    <div class="col">  
+                        <div class="form-group">
+                        <label for="inputCollectionDate">Collection date:</label><input type="date" class="form-control" id="inputCollectionDate" required>
+                        </div>
+                      </div>
+                    </div>
+                  <button type="submit" class="btn btn-dark">View shopping list</button>
+                </form>
+                <br>
+            </div>
+            <div class="col-md-3 col-sm-2 col-1"></div>
+        </div>
+        </div>
+                <!---Shopping list info--->
+                <div class="container" id="shoppingListInfo">
+                <!---Returned shopping list info will show here.--->
+                </div>
+        </div>
+            
+            
+   <!---Add baking item to database--->
+        <div class="container text-left p-3 mt-3 border rounded">
+            <h4><i>Add baking item to database</i></h4>
+        <div class="container text-center">
+        <div class="row">
+            <div class="col-md-3 col-sm-2 col-1"></div>
+            <div class="col-md-6 col-sm-8 col-10">
+                <form>
+                  <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                        <label for="inputOrderNum">Baking code:</label><input type="text" class="form-control" id="inputBakeCode" placeholder="Baking code" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                        <label for="inputItemName">Item name:</label><input type="text" class="form-control" id="inputItemName" placeholder="Item name" required>
+                        </div>
+                    </div>
+                    </div>
+                  <button type="submit" class="btn btn-dark">Add item</button>
+                </form>
+                <br>
+            </div>
+            <div class="col-md-3 col-sm-2 col-1"></div>
+        </div>
+        </div>
+            <!---Adding baking item--->
+            <div class="container" id="addToDatabase">
+            <!---Database addition confirmation will show here.--->
+            </div>
+        </div>
+        
+            
+   <!---Removing baking item from database--->
+        <div class="container text-left p-3 mt-3 mb-4 border rounded">
+            <h4><i>Removing baking item from database</i></h4>
+        <div class="container text-center">
+        <div class="row">
+            <div class="col-md-3 col-sm-2 col-1"></div>
+            <div class="col-md-6 col-sm-8 col-10">
+                <form>
+                  <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                        <label for="inputOrderNum">Baking code:</label><input type="text" class="form-control" id="inputBakeCode" placeholder="Baking code" required>
+                        </div>
+                    </div>
+                    </div>
+                  <button type="submit" class="btn btn-dark">Remove item</button>
+                </form>
+                <br>
+            </div>
+            <div class="col-md-3 col-sm-2 col-1"></div>
+        </div>
+        </div>
+            <!---Adding baking item--->
+            <div class="container" id="addToDatabase">
+            <!---Database addition confirmation will show here.--->
+            </div>
+        </div>
+        
+          <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        </body>
+            
+        <footer>
+            <div class="container small">
+                <div class="row">
+                    <div class="col-6 text-left"><p><b>Registered Charity Number:</b> 1156200<br>
+                    <b>Head Office:</b> 2A Oxford Street, Mount Pleasant, Batley, WF17 7PZ</p></div>
+                    <div class="col-6 text-right"><a href="privacy.html">Privacy</a> <b>|</b> <a href="contact.html">Contact us</a> <b>|</b> <a href="https://onenationuk.org/">One Nation</a> <b>|</b> <a class="ins-ic mr-3" role="button" href="http://instagram.com/cheesecakeforcharity"><i class="fab fa-instagram"></i></a></div>
+                </div>
+            </div>
+        </footer>
+            
+        </html>

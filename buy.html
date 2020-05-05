@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bake for Charity - Buy</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+</head>
+<body>
+
+    <!---Responsive navbar--->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="fas fa-cookie-bite"></i>
+           Bake for Charity</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="nav navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="buy.html">Buy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="orders.html">Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="donate.html">Donate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="volunteers.html">Volunteers</a>
+              </li>
+              </ul>
+         </div>
+        </div>
+    </nav>
+        
+    
+    <!---Place an order--->
+    <div class="container border-bottom border-dark">
+        <h3><i>Place an order</i></h3>
+    </div>
+    
+    <div class="container text-left p-3">
+        <div class="row">
+            <div class="col-6 text-white bg-dark rounded p-3 my-auto">
+                <p><i>1. Place your order below for your chosen collection date.</i></p>
+                <p><i>2. Your order will be confirmed, and you will be given an Order Number.</i></p>
+                <p><i>3. Payment is accepted by cash upon collection.</i></p>
+                <p><i>4. Collect your baking - and enjoy!</i></p>
+            </div>
+            <div class="col-6"><img class="img-thumbnail float-right" src="Buy1.jpg" alt="Four square cheesecakes"></div>
+        </div>
+    </div>
+    
+    <!---Form--->
+    <div class="container text-center p-5">
+        <div class="row">
+            <div class="col-md-3 col-sm-2 col-1"></div>
+            <div class="col-md-6 col-sm-8 col-10 p-3 mt-3 mb-5 border rounded">
+                <form>
+                  <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                        <label for="inputFirstName">First name</label><input type="text" class="form-control" id="inputFirstName" placeholder="First name" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                        <label for="inputLastName">Last name</label><input type="text" class="form-control" id="inputLastName" placeholder="Last name" required>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                        <label for="inputHouseNo">House number</label><input type="number" class="form-control" id="inputHouseNo" placeholder="House number" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                       <div class="form-group">
+                        <label for="inputPostcode">Postcode</label><input type="text" class="form-control" id="inputPostcode" placeholder="Postcode" required pattern="([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([A-Za-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9][A-Za-z]?))))\s?[0-9][A-Za-z]{2})">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                        <label for="inputContactNo">Contact number</label><input type="number" class="form-control" id="inputContactNo" placeholder="Contact number" required size="11">
+                        </div>
+                    </div>
+                    <div class="col">  
+                        <div class="form-group">
+                        <label for="inputCollectionDate">Collection date</label><input type="date" class="form-control" id="inputCollectionDate" required>
+                        </div>
+                      </div>
+                    </div>
+                        <div class="form-group">
+                        <label for="inputOreo">Oreo cheesecake slices</label>
+                        <select class="form-control" id="inputOreo" required>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputCrunchie">Crunchie cheesecake slices</label>
+                        <select class="form-control" id="inputCrunchie" required>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputBiscoff">Biscoff cheesecake slices</label>
+                        <select class="form-control" id="inputBiscoff" required>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputChocOrange">Chocolate Orange cheesecake slices</label>
+                        <select class="form-control" id="inputChocOrange" required>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputChocCookie">Dairy Milk cookie bar slices</label>
+                        <select class="form-control" id="inputChocCookie" required>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputOrangeCookie">Chocolate Orange cookie bar slices</label>
+                        <select class="form-control" id="inputOrangeCookie" required>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputChocFudge">Dairy-free chocolate fudge cake slices</label>
+                        <select class="form-control" id="inputChocFudge" required>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputMillionaire">Millionaire shortbread cake slices</label>
+                        <select class="form-control" id="inputMillionaire" required>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                  </div>
+                <br>
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="privacyCheck">
+                      <label class="form-check-label" for="exampleCheck1"><small>By checking this box, you are agreeing to allow us to process your order and details in line with our Privacy Policy.</small></label>
+                  </div>
+                <br>
+                  <button type="submit" class="btn btn-dark">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-3 col-sm-2 col-1"></div>
+        </div>
+    </div>
+    
+    <!---Order info--->
+    <div class="container" id="orderInfo">
+        <!---Returned order info will show here.--->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+</body>
+
+<footer>
+    <div class="container small">
+        <div class="row">
+            <div class="col-6 text-left"><p><b>Registered Charity Number:</b> 1156200<br>
+            <b>Head Office:</b> 2A Oxford Street, Mount Pleasant, Batley, WF17 7PZ</p></div>
+            <div class="col-6 text-right"><a href="privacy.html">Privacy</a> <b>|</b> <a href="contact.html">Contact us</a> <b>|</b> <a href="https://onenationuk.org/">One Nation</a> <b>|</b> <a class="ins-ic mr-3" role="button" href="http://instagram.com/cheesecakeforcharity"><i class="fab fa-instagram"></i></a></div>
+        </div>
+    </div>
+</footer>
+
+</html>
